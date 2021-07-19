@@ -1,0 +1,14 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: mail-service
+  rabbitmq:
+    host: 192.168.75.132
+    virtual-host: /leyou
+    username: leyou
+    password: leyou
+leyou:
+  mail:
+    username: 1328699467@qq.com
+    password: guojiabao321q

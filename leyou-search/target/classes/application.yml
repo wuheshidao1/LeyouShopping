@@ -1,0 +1,29 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: search-service
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: 192.168.75.132:9300
+  jackson:
+    default-property-inclusion: non_null
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: 192.168.75.132
+    virtual-host: /leyou
+    username: leyou
+    password: leyou
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+ribbon:
+  eureka:
+    enabled: true
